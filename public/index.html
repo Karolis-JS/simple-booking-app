@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="session.css">
+    <script src="session.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+<div class="register">
+    <h3>Register</h3>
+    <input id="regInpName" type="text" placeholder="Your name">
+    <input id="regInppass" type="password" placeholder="Password">
+    <input id="regInppass2" type="password" placeholder="Repeat password">
+    <div id="regError"></div>
+    <button id="regBtn">Register</button>
+    <span>or</span>
+    <button id="goToLogBtn">Go to Login</button>
+</div>
+
+<div class="login">
+    <h3>Login</h3>
+    <input id="logInpName" type="text" placeholder="Your name">
+    <input id="logInpPass" type="password" placeholder="Password">
+    <div id="logError"></div>
+    <button id="logBtn">Login</button>
+    <span>or</span>
+    <button id="goToRegBtn">Go to Register</button>
+</div>
+
+<div id="notificationMsg">
+    <i id="closeNotificationMsg" class="fas fa-times-circle"></i>
+    <div id="addMsgNotification">
+
+    </div>
+
+</div>
+
+<div class="main">
+
+    <div class="navBar">
+
+        <div id="loginAs">Prisijungęs kaip:</div>
+        <i id="notification" class="fas fa-bell">
+            <div id="notificationSymbol"></div>
+
+        </i>
+        <div id="signOut">sign Out</div>
+
+    </div>
+
+    <div class="userMain">
+        <h3>Library users</h3>
+        <div id="allUser">
+            <div class="regUserName">Karolis</div>
+
+        </div>
+
+
+        <div class="inventoryDiv">
+            <h3>Your reserved books</h3>
+            <div class="inventoryBook">
+
+            </div>
+
+        </div>
+    </div>
+
+    <h2 class="mainName">Book library</h2>
+    <div id="bookList">
+    </div>
+
+    <div id="modal">
+        <i id="closeModal" class="far fa-times-circle"></i>
+        <h3 id="anotherUserName">Vartotojas rezervavęs šias knygas:</h3>
+        <div id="anotherUserBooks">
+        </div>
+    </div>
+
+
+
+</div>
+
+
+</body>
+</html>

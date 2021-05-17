@@ -1,0 +1,325 @@
+body{
+    width: 97%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #94618E;
+}
+body input{
+    margin: 10px;
+    width: 300px;
+}
+body button{
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    cursor: pointer;
+}
+.register{
+    width: 50%;
+    height: 60%;
+    background-color: #49274A;
+    border-radius: 100px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset -5px -6px 7px 2px rgba(52,28,53,1);
+}
+.register h3, span{
+    color: #F4DECB;
+}
+.login h3{
+    color: #F4DECB;
+}
+.login{
+    display: none;
+    width: 50%;
+    height: 60%;
+    background-color: #49274A;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px 0 100px 0;
+    box-shadow: inset -5px -6px 7px 2px rgba(52,28,53,1);
+}
+.main{
+    display: none;
+}
+#regBtn, #logBtn, #goToLogBtn, #goToRegBtn{
+    background-color: #F4DECB;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 0 20px 0 20px;
+    border: none;
+    color: #49274A;
+    transition: 0.3s;
+}
+#logBtn:hover{
+    background-color: #94618E;
+    border-radius: 20px 0 20px 0;
+    color: #F4DECB;
+}
+#regBtn:hover{
+    background-color: #94618E;
+    border-radius: 20px 0 20px 0;
+    color: #F4DECB;
+}
+#regBtn:focus {
+    outline: none;
+    border: none;
+}
+#logBtn:focus {
+    outline: none;
+    border: none;
+}
+#goToLogBtn:focus {
+    outline: none;
+    border: none;
+}
+#goToRegBtn:focus {
+    outline: none;
+    border: none;
+}
+#goToLogBtn:hover{
+    background-color: #94618E;
+    border-radius: 20px 0 20px 0;
+    color: #F4DECB;
+}
+#goToRegBtn:hover{
+    background-color: #94618E;
+    border-radius: 20px 0 20px 0;
+    color: #F4DECB;
+}
+#regError, #logError{
+    color: #F4DECB;
+}
+.navBar{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #49274A;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #F4DECB;
+    z-index: 1;
+}
+#signOut{
+    padding: 10px;
+    color: #F4DECB;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #F4DECB;
+}
+#signOut:hover{
+    background-color: #F4DECB;
+    color: #49274A;
+}
+.userMain{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 89vh;
+    background-color: #F4DECB;
+    position: fixed;
+    top: 81px;
+    left: 0;
+    border-radius: 0 0 100px 0;
+    box-shadow: inset -3px -2px 5px 1px rgba(52,28,53,1);
+    z-index: 1;
+}
+.userMain h3 {
+    color: #49274A;
+}
+.regUserName{
+    cursor: pointer;
+    margin: 7px;
+    color: #49274A;
+}
+#bookList{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    width: 62%;
+    height: 69vh;
+    left: 32%;
+    top: 114px;
+    background-color: #F4DECB;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px 0 0 0;
+    box-shadow: inset 3px 3px 5px 1px rgba(52,28,53,1);
+}
+.bookList h2 {
+    color: #49274A;
+}
+.bookCard{
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 50px 0 50px 0;
+    border: 2px solid #49274A;
+
+    align-items: center;
+    color: #94618E;
+}
+#reserveBtn{
+    border: 2px solid #49274A;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #49274A;
+
+}
+#reserveBtn:hover{
+    background-color: #49274A;
+    color: #F4DECB
+}
+#bookImg{
+    width: 120px;
+    height: 170px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-image: url("https://thumb.knygos-static.lt/s7FOsEKjLq7RLBLkfGAV8gidlmI=/fit-in/320x430/filters:cwatermark(static/wm.png,500,75,30)/images/books/2489464/1614928636_9786094274787_Au%C5%A1vicas.jpg");
+}
+.mainName{
+    position: absolute;
+    left: 60%;
+    top: 10.3%;
+    z-index: 2;
+    color: #F4DECB
+}
+.inventoryDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inventoryBook{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#yourBook{
+    width: 60px;
+    height: 90px;
+    margin: 7px;
+    background-size: cover;
+    background-image: url("https://thumb.knygos-static.lt/s7FOsEKjLq7RLBLkfGAV8gidlmI=/fit-in/320x430/filters:cwatermark(static/wm.png,500,75,30)/images/books/2489464/1614928636_9786094274787_Au%C5%A1vicas.jpg");
+}
+#backBookDiv{
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+    width: 70px;
+    align-items: center;
+    padding: 6px;
+    box-shadow: inset 0px 0px 182px -70px rgba(148,97,142,1);
+    border-radius: 10px;
+}
+#giveBackBtn{
+    width: 60px;
+    border: 1px solid #49274A;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #49274A;
+    font-size: 14px;
+    text-align: center;
+
+}
+#reserve{
+    width: 80px;
+    border: 1px solid #49274A;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #49274A;
+    font-size: 14px;
+    text-align: center;
+
+}
+#giveBackBtn:hover{
+    background-color: #49274A;
+    color: #F4DECB
+}
+#notification{
+    cursor: pointer;
+}
+#notificationSymbol{
+    display: none;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    top: -30px;
+    left: 10px;
+}
+#notificationMsg{
+    display: none;
+    width: 215px;
+    height: 100px;
+    position: relative;
+    top: -30%;
+    left: -2%;
+    background-color: #F4DECB;
+    border-radius: 20px;
+    z-index: 3;
+    padding: 18px;
+    text-align: center;
+    color: #49274A;
+    box-shadow: inset 0px 0px 10px 1px rgba(73,39,74,1);
+    animation-name: sketchIn;
+
+}
+#closeNotificationMsg{
+    position: relative;
+    top:-7px;
+    left: 95px;
+    cursor: pointer;
+
+}
+#modal{
+    display: none;
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    background-color: #F4DECB;
+    box-shadow: inset 0px 0px 10px 1px rgba(73,39,74,1);
+    color: #49274A;
+}
+#modal i{
+    position: relative;
+    left: 93%;
+    top: 3%;
+    font-size: 30px;
+    margin: 0;
+    cursor: pointer;
+}
+#modal h3{
+    margin-top: 0;
+}
+#anotherUserBooks{
+    display: flex;
+    overflow: auto;
+}
+.modalBooks{
+    width: 135px;
+    height: 190px;
+    margin: 10px;
+    background-size: cover;
+    background-image: url("https://thumb.knygos-static.lt/s7FOsEKjLq7RLBLkfGAV8gidlmI=/fit-in/320x430/filters:cwatermark(static/wm.png,500,75,30)/images/books/2489464/1614928636_9786094274787_Au%C5%A1vicas.jpg");
+}
